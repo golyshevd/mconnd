@@ -1,0 +1,34 @@
+{
+  "author": "Golyshev Dmitrii <golyshev.dmitry@yandex.ru>",
+  "bugs": {
+    "url": "https://github.com/golyshevd/mongo-connect/issues"
+  },
+  "contributors": [
+    "Golyshev Dmitrii <golyshev.dmitry@yandex.ru>"
+  ],
+  "dependencies": {
+    "lodash-node": "3.3.1",
+    "loggin": "2.2.1",
+    "mongodb": "1.4.33"
+  },
+  "description": "mongodb connection daemonizer",
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "glob": "5.0.0",
+    "gulp-one-guide": "0.2.0",
+    "gulp-mocha": "2.0.0",
+    "gulp-istanbul": "0.6.0",
+    "gulp-util": "3.0.4"
+  },
+  "license": "MIT",
+  "main": "lib/daemon",
+  "name": "mongo-connect",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/golyshevd/mongo-connect.git"
+  },
+  "engines": {
+    "node": ">= 0.10.36"
+  },
+  "version": "0.0.1"
+}
