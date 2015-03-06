@@ -1,20 +1,14 @@
 /*eslint max-nested-callbacks: 0*/
 'use strict';
 
-var _ = require('lodash-node');
 var assert = require('assert');
-var logging = require('loggin');
 
 describe('lib/context', function () {
     var Daemon = require('../lib/daemon');
     var Context = require('../lib/context');
 
     function getFakeCc(url, opts, connectFn) {
-        var daemon = new Daemon(url, _.extend({}, opts, {
-            logger: logging.getLogger('test').conf({
-                enabled: []
-            })
-        }));
+        var daemon = new Daemon(url, opts);
         daemon.connect = connectFn.bind(daemon);
         return new Context(daemon, daemon.logger);
     }

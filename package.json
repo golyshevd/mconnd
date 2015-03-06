@@ -1,14 +1,13 @@
 {
   "author": "Golyshev Dmitrii <golyshev.dmitry@yandex.ru>",
   "bugs": {
-    "url": "https://github.com/golyshevd/mongo-connect/issues"
+    "url": "https://github.com/golyshevd/mconnd/issues"
   },
   "contributors": [
     "Golyshev Dmitrii <golyshev.dmitry@yandex.ru>"
   ],
   "dependencies": {
     "lodash-node": "3.3.1",
-    "loggin": "2.2.1",
     "mongodb": "1.4.33"
   },
   "description": "mongodb connection daemonizer",
@@ -22,10 +21,10 @@
   },
   "license": "MIT",
   "main": "lib/daemon",
-  "name": "mongo-connect",
+  "name": "mconnd",
   "repository": {
     "type": "git",
-    "url": "git://github.com/golyshevd/mongo-connect.git"
+    "url": "git://github.com/golyshevd/mconnd.git"
   },
   "engines": {
     "node": ">= 0.10.36"
