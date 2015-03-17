@@ -37,7 +37,7 @@ daemon.createLogger = function (contextName) {
 };
 app.use(function (req, res, next) {
     var context = daemon.createContext(req.id);
-    daemon.getConnect(function (err, db) {
+    context.getConnect(function (err, db) {
         // stuff with db
     });
 });
